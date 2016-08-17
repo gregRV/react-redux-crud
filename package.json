@@ -1,0 +1,24 @@
+{
+  "name": "react-redux-crud",
+  "version": "1.0.0",
+  "description": "CRUD utility for react with redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregRV/react-redux-crud.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "crud"
+  ],
+  "author": "Greg Varias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregRV/react-redux-crud/issues"
+  },
+  "homepage": "https://github.com/gregRV/react-redux-crud#readme"
+}
