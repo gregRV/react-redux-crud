@@ -2,7 +2,7 @@
   "name": "react-redux-crud",
   "version": "1.0.0",
   "description": "CRUD utility for react with redux",
-  "main": "index.js",
+  "main": "rrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
