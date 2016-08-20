@@ -51,7 +51,64 @@ const resourceActions = (resource) => {
   }, '');
 }
 
+const resourceReducer = (resource) => {
+  const caps = resource.toUpperCase();
+  
+  return `
+    import {
+      FETCH_${caps}_START,
+      FETCH_${caps}_SUCCESS,
+      FETCH_${caps}_ERROR,
+      CREATE_${caps}_START,
+      CREATE_${caps}_SUCCESS,
+      CREATE_${caps}_ERROR,
+      UPDATE_${caps}_START,
+      UPDATE_${caps}_SUCCESS,
+      UPDATE_${caps}_ERROR,
+      DELETE_${caps}_START,
+      DELETE_${caps}_SUCCESS,
+      DELETE_${caps}_ERROR
+    } from ./${resource}-actions;
+
+    function ${resource}(state=[], action) {
+      switch(action.type) {
+        case FETCH_${caps}_START:
+          return state;
+        case FETCH_${caps}_SUCCESS:
+          return state;
+        case FETCH_${caps}_ERROR:
+          return state;
+        
+        case CREATE_${caps}_START:
+          return state;
+        case CREATE_${caps}_SUCCESS:
+          return state;
+        case CREATE_${caps}_ERROR:
+          return state;
+          
+        case UPDATE_${caps}_START:
+          return state;
+        case UPDATE_${caps}_SUCCESS:
+          return state;
+        case UPDATE_${caps}_ERROR:
+          return state;
+        
+        case DELETE_${caps}_START:
+          return state;
+        case DELETE_${caps}_SUCCESS:
+          return state;
+        case DELETE_${caps}_ERROR:
+          return state;
+
+        default:
+          return state;
+      }
+    }
+  `;
+}
+
 // console.log(resourceClass('User'));
 // console.log(resourceActionTypes('User'));
-// console.log(resourceActions('user'));
+console.log(resourceActions('user'));
+console.log(resourceReducer('user'));
 module.exports = resourceClass;
