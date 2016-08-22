@@ -107,8 +107,8 @@ const resourceReducer = (resource) => {
   `;
 }
 
-console.log(resourceClass('User'));
-console.log(resourceActionTypes('User'));
-console.log(resourceActions('user'));
-console.log(resourceReducer('user'));
+// console.log(resourceClass('User'));
+// console.log(resourceActionTypes('User'));
+// console.log(resourceActions('user'));
+// console.log(resourceReducer('user'));
 module.exports = resourceClass;
