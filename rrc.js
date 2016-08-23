@@ -38,7 +38,7 @@
       case 'reducer':
         return rs.reducer(res);
       default:
-        return `${file} did not match any templates!`;
+        return `//${file} did not match any templates!`;
         break;
     }
   }
